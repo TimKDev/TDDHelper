@@ -1,0 +1,7 @@
+1. Red Green Refactor cycle => Durchklicken
+2. Gears => Hich oder Runterstellen
+
+=> Regeln: Müssen befolgt werden
+
+=> Tipps: Optional z.B. Ansätze zum Refactorn (Naming), Hilfestellung um nächsten Test zu finden 
+

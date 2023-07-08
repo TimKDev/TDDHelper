@@ -1,0 +1,26 @@
+<div class="refactor-cycle">
+  <div class="red">
+    <div [class.active]="activeCycle === 'red'">
+      Red
+    </div>
+  </div>
+  <div class="green">
+    <div [class.active]="activeCycle === 'green'">
+      Green
+    </div>
+  </div>
+  <div class="refactor">
+    <div [class.active]="activeCycle === 'refactor'">
+      Refactor
+    </div>
+  </div>
+</div>
+<div class="cycle-btn" >
+  <button (click)="goToNextCycle()">Nächster Zykel</button>
+  <button (click)="emitBackout()">Backout</button>
+</div>
+<div class="center" *ngIf="showBackoutMessage"> 
+  <div class="backout-message">
+    Bringe die Codebase (Tests- und Produktionscode) in einen Zustand, indem alle Tests wieder bestehen, z.B. indem ein schwieriger Test zunächst auskommentiert wird oder man solange mit Ctrl + Z zurück geht, bis alle Tests wieder bestehen. Starte dann z.B. mit einem Learning Test oder versuche einen der auskommentierten Tests mit Hilfe von Triangulation zu lösen. Dabei kann man z.B. die Reihenfolge Bearbeitung der Tests verändern (man tut quasi so aus hätte man die Tests in umgekehrter Reihenfolge bearbeitet) und sollte alternative Implementierungen im Produktionscode ausprobieren. 
+  </div>
+</div>

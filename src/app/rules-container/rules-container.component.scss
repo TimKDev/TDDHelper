@@ -1,0 +1,56 @@
+.main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.container {
+  width: 800px;
+  min-height: 300px;
+  background-color: #edecec;
+  border-radius: 16px;
+  padding: 16px;
+
+  .gears{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+
+    .gear{
+      width: 170px;
+      height: 40px;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 32px;
+      background-color: #bbb3b3;
+      color: white;
+      cursor: pointer;
+    }
+
+    .active{
+      background-color: yellow;
+      color: black;
+      border: 3px solid black;
+    }
+  }
+
+  .target {
+    h2 {
+      text-align: center;
+    }
+
+    .target-text{
+      margin-left: 20px;
+    }
+  }
+
+  .rules {
+    h2 {
+      text-align: center;
+    }
+  }
+}

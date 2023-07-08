@@ -1,0 +1,70 @@
+.refactor-cycle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+
+  div {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .red {
+    background-color: #bbb3b3;
+    color: white;
+
+    .active {
+      background-color: #ff4747;
+    }
+  }
+
+  .green {
+    background-color: #bbb3b3;
+    color: white;
+
+    .active {
+      background-color: #30e330;
+    }
+  }
+
+  .refactor {
+    background-color: #bbb3b3;
+    color: white;
+
+    .active {
+      background-color: #2ed1ff;
+    }
+  }
+}
+
+.cycle-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-top: 16px;
+
+  button {
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+  }
+}
+
+.backout-message{
+  width: 1000px;
+  margin-top: 16px;
+  font-size: 13px;
+  color: red;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

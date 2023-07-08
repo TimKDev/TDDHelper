@@ -1,0 +1,29 @@
+<div class="main-container">
+  <div class="container">
+    <div class="gears">
+      <div class="gear" [class.active]="gear === 'low'" (click)="emitChangeGear('low')">Low Gear</div>
+      <div class="gear" [class.active]="gear === 'medium'" (click)="emitChangeGear('medium')">Medium Gear</div>
+      <div class="gear" [class.active]="gear === 'high'" (click)="emitChangeGear('high')">High Gear</div>
+    </div>
+    <div class="target">
+      <h2>Ziel</h2>
+      <div class="target-text">
+        {{config[activeCycle].target}}
+      </div>
+    </div>
+    <div class="rules">
+      <h2>Regeln</h2>
+      <ol>
+        <li *ngFor="let rule of config[activeCycle].rules[gear]">{{rule}}</li>
+      </ol>
+    </div>
+
+    <div class="rules">
+      <h2>Tipps</h2>
+      <ol>
+        <li *ngFor="let tip of config[activeCycle].tips[gear]">{{tip}}</li>
+      </ol>
+    </div>
+
+  </div>
+</div>
